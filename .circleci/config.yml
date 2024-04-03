@@ -54,3 +54,4 @@ jobs:
           name: deploy-application
           command: ssh -o StrictHostKeyChecking=no ubuntu@ec2-16-16-91-24.eu-north-1.compute.amazonaws.com "export SERVER=\"$SERVER\"; export PRIVATE_KEY=\"$PRIVATE_KEY\"; rm -rf ~/DockerApp2/;git clone https://github.com/DMLFrancis/DockerApp2.git; source DockerApp2/deploy.sh"
 
+
